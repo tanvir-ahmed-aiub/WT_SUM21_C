@@ -25,8 +25,8 @@
 	
 	$arr4 = array();//empty associative array
 	$arr5 = []; //empty associative array
-	$arr6 = ("tanvir"=>35,"sabbir"=>36,"karim"=>37);
-	$arr7 = ("tanvir"=>"797As","sabbir"=>"dsgfr7","karim"=>"sddfg?");
+	$arr6 = array("tanvir"=>35,"sabbir"=>36,"karim"=>37);
+	$arr7 = array("tanvir"=>"797As","sabbir"=>"dsgfr7","karim"=>"sddfg?");
 	
 	$arr4["tanvir"] = 35;
 	$arr4["sabbir"] = 36;
