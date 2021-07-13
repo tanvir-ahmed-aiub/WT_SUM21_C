@@ -3,14 +3,18 @@
 		include 'db_config.php';
 		$query = "select * from users";
 		
-		$result = mysqli_query($conn,$query);
+		$result = get($query);
+		echo "<pre>";
+		print_r($result);
+		echo "</pre>";
+		
 		echo "<table border='1'>";
 			echo "<tr>
 					<th>Id</th>
 					<th>Name</th>
 					<th>Username</th>
 				  </tr>";
-		while ($row = mysqli_fetch_assoc($result)){
+		foreach ($result as $row){
 			echo "<tr>";
 				echo "<td>".$row["id"]."</td>";
 				echo "<td>".$row["name"]."</td>";
