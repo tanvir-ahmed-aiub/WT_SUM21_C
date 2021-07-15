@@ -21,6 +21,7 @@
 		}
 		$err_db = $rs;
 	}
+	
 	function insertProduct($name,$c_id,$price,$qty,$desc,$img){
 		$query = "insert into products values (NULL,'$name',$c_id,$price,$qty,'$desc','$img')";
 		return execute($query);
