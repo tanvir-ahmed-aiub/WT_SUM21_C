@@ -1,59 +1,10 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="styles/mystyle.css">
 		<style>
-			p{
-				text-align:justify;
+			#h11{
+				color:green;
 			}
-			#p1{
-				color:blue;
-				background-color:cyan;
-				font-family:verdana;
-				/*margin-top: 100px;
-				margin-left:10px;
-				margin-bottom:500px;
-				margin-right:50px;*/
-				margin:10px;
-				
-			}
-			#p10{
-				color:rgb(14,25,205);
-				background-color:#021541;
-			}
-			
-			.red{
-				color:red;
-				background-color:black;
-				font-family:consolas;
-				padding:20px;
-				
-			}
-			.btn-link{
-				background-color:rgb(73,127,175);
-				color:white;
-				font-family:calibri;
-				padding-left:20px;
-				padding-right:20px;
-				padding-top:10px;
-				padding-bottom:10px;
-				text-decoration:none;
-				border-radius:5px;
-			}
-			.btn-link:hover{
-				background-color:rgb(0,78,162);
-			}
-			.btn-link:active{
-				background-color:red;
-			}
-			#p3{
-				display:inline;
-			}
-			.sp1{
-				background-color:rgb(0,78,162);
-				display:block;
-			}
-			
-			
-			
 		</style>
 	</head>
 	<body>
@@ -67,8 +18,8 @@
 		</div>
 		
 		<br><br>
-		<h1 class="sp1">This is h1</h1>
-		<span class="sp1">This is a span</span><p id="p3">This is a paragraph</p>
+		<h1 id="h11" class="sp1" style="color:white;border-radius:5px;">This is h1</h1>
+		<span class="sp1" style="color:white;">This is a span</span><p id="p3">This is a paragraph</p>
 		<p id="p1">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
 		<p class="red">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.</p>
 		<p>Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.</p>
