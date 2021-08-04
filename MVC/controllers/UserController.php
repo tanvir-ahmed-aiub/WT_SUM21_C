@@ -49,6 +49,7 @@
 		}
 		if(!$hasError){
 			if(authenticateUser($uname,$pass)){
+				
 				header("Location: dashboard.php");
 			}
 			$err_db = "Username password invalid";
@@ -69,6 +70,14 @@
 		}
 		return false;
 		
+	}
+	function checkUsername($uname){
+		$query = "select name from users where username='$uname'";
+		$rs = get($query);
+		if(count($rs) > 0){
+			return true;
+		}
+		return false;
 	}
 	
 	

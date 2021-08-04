@@ -41,6 +41,24 @@
 		$query ="update products set name='$name',c_id=$c_id,price=$price,qty=$qty,description='$desc' where id = $id";
 		return execute($query);
 	}
+	function searchProduct($key){
+		$query = "select p.id,p.name from products p left join categories c on p.c_id = c.id where p.name like '%$key%' or c.name like '%$key%'";
+		
+		$rs = get($query);
+		return $rs;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 ?>

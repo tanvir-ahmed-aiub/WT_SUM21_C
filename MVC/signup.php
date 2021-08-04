@@ -14,8 +14,8 @@
 		</div>
 		<div class="form-group">
 			<h4 class="text">Username</h4> 
-			<input type="text" name="uname"  value="<?php echo $uname;?>" class="form-control">
-			<span class="text-danger"><?php echo $err_uname;?></span>
+			<input type="text" onfocusout="checkUsername(this)" name="uname"  value="<?php echo $uname;?>" class="form-control">
+			<span id="err_uname" class="text-danger"><?php echo $err_uname;?></span>
 		</div>
 		<div class="form-group">
 			<h4 class="text">Email</h4> 
@@ -31,6 +31,6 @@
 		</div>
 	</form>
 </div>
-
+<script src="js/signup.js"></script>
 <!--sign up ends -->
 <?php include 'main_footer.php';?>
